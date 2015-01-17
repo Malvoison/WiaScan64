@@ -1,0 +1,4 @@
+LIBRARY BootStrapper
+
+EXPORTS
+	VirtualChannelGetInstance		@1

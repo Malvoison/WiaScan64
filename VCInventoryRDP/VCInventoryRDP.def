@@ -1,0 +1,4 @@
+LIBRARY VCInventoryRDP
+
+EXPORTS
+		VirtualChannelEntry @1

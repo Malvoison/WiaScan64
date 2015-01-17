@@ -1,0 +1,32 @@
+// UdvcDriver.idl : IDL source for UdvcDriver
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (UdvcDriver.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(94F61208-82DB-475E-85A6-24A67DF0D32F),
+	pointer_default(unique)
+]
+interface IUVCPlugin : IUnknown{
+};
+[
+	uuid(CD151D51-FD95-45F3-8807-3370E5803E0D),
+	version(1.0),
+]
+library UdvcDriverLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2AF1A79C-40F5-4ED9-BC4F-19D13A0BEF62)		
+	]
+	coclass UVCPlugin
+	{
+		[default] interface IUVCPlugin;
+	};
+};
+

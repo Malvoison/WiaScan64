@@ -1,0 +1,15 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {2AF1A79C-40F5-4ED9-BC4F-19D13A0BEF62} = s 'UVCPlugin Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			TypeLib = s '{CD151D51-FD95-45F3-8807-3370E5803E0D}'
+			Version = s '1.0'
+		}
+	}
+}

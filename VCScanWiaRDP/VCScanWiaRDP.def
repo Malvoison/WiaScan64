@@ -1,0 +1,4 @@
+LIBRARY VCScanWiaRDP
+
+EXPORTS
+		VirtualChannelEntry @1		
